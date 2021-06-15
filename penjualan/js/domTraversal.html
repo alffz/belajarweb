@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+        padding: 2px 16px;
+        width:100px;
+        }
+        .kotak{
+            max-width: 100%; 
+            margin: 30px auto;
+
+        }
+        .input{
+            opacity: 0.5;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .close{          
+            justify-content: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id='cardd' class="card">
+        <a href="" class="close">x</a> 
+        <img src="gambar/avatar.jpeg" width="100" alt="Avatar" >
+        <div class="container">
+          <h4><b>ilham</b></h4>
+          <p>Architect & Engineer</p>
+          <p>082340044004</p>
+          <p>john@doe.com</p>
+        </div><!-- container -->         
+    </div> <!--card-->
+  
+        <span class="close">tutup</span> 
+    
+    <div id='card' class="card">
+        <a href="" class="close">x</a> 
+        <img src="gambar/avatar.jpeg" width="100" alt="Avatar" >
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <p>082340044004</p>
+          <p>john@doe.com</p>
+          <p>newyork</p>
+        </div><!-- container -->       
+    </div> <!--card-->
+    
+    <!-- DOM Bubling
+        pada dasarnya ketika sebuah elemen di beri event , maka event tersebut juga berlaku untuk
+        element pembungkusnya yaitu parent -> grandpa -> grandpa^2 -> grandpa^ dst
+        Contoh :  pada contoh dibawah ini div3 memiliki parent div2 dan grandpa div1 
+                  dan masing2 div memiliki event tersendiri (onclick()), ketika div3 diklik
+                  secara default maka event pada div2 dan div1 juga akan berjalan . inilah yang 
+                  dinamakan event bubling . 
+        untuk mencegah event bubling dapat digunakan methode stopPropagation()
+        
+    -->
+    <div class="cek" onclick="alert('div1')">cek
+        <div class="cek" onclick="alert('div2')"> coba
+            <div class="cek" onclick="alert('div3')">klik saya</div>
+        </div>
+    </div>
+    <script src="domtravesal.js"></script>
+</body>
+
+</html>

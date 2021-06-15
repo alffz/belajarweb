@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+        padding: 2px 16px;
+        width:100px;
+        }
+        .kotak{
+            max-width: 100%; 
+            margin: 30px auto;
+
+        }
+        .input{
+            opacity: 0.5;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .close{          
+            justify-content: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1"  class="kotak  card">
+        <h4>cinta adalah kunci</h4>
+        <p>untuk kita menaklukkan dunia berlarilah</p>
+        <p>hingga engkaup mengejar mimpimuuu laskar pelangiii</p>
+        <p>takkan terikat waktu raihlah mimpi mimpimuuu hey</p>
+    </div>
+    <div id="div2" class='kotak  card '>
+        <h4>menarilah dan terus tertawa walau dunia tak seindah syurga</h4>
+        <p>bersyukurlah pada yang kuasa </p>
+        <p>aku memang pencinta wanita namun kubukan buaya</p>
+        <p>yang setia pada seribu gadis namun ku hanyu</p>
+    </div>
+    <div class="card container">
+        <img src="gambar/avatar.jpeg" width="100" alt="Avatar" >
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <p>082340044004</p>
+          <p>john@doe.com</p>
+        </div><!-- container -->
+        <span class="close">x</span>
+      </div>  <!--card-->
+    <div class="kotak input">
+        <input  type="range" name="red"   id="warna" value="255" min="0" max="255">
+        <input  type="range" name="green" id="warna" value="255" min="0" max="255">
+        <input  type="range" name="blue"  id="warna" value="255" min="0" max="255">    
+    </div>
+    <div class="kotak">
+        <input type="number" name="merah" id="" min="0" max="255">
+        <input type="number" name="hijau" id="" min="0" max="255">
+        <input type="number" name="biru" id="" min="0" max="255">
+    </div>
+    <div class="kotak">
+        <input type="range" name="biru1" id="" value="255" min="0" max="255">
+    </div>
+    <script src='warna.js'></script> 
+</body>
+
+</html>

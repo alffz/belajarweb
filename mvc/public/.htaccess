@@ -1,0 +1,15 @@
+Options -Multiviews
+
+# mengaktifkan mesin dan ada beberapa fungsinya
+RewriteEngine on
+
+# abaikan jika url yang di tulis berupa folder maka abaikan
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# 
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# ambil string apapun pada url sampai habis , dan inputkan ke  variable $1
+# ini juga mendefinisikan dari bagian mana root nya  
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+

@@ -1,0 +1,3 @@
+# ketika tidak ada file index di folder app maka jangan beri akses 
+# akan muncul peingatan , you dont have permission .......
+Options -Indexess

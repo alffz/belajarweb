@@ -1,0 +1,5 @@
+<?php
+echo 'halaman rumah';
+
+
+?>
